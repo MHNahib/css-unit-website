@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +11,15 @@ body {
 }
 
 a {
-  color: #7f95d1;
   text-decoration: none;
+}
+
+.profile-link {
+  color: #7f95d1;
   transition: 0.3s ease;
 }
 
-a:hover {
+.profile-link:hover {
   color: #6983c9;
 }
 
@@ -23,6 +28,10 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.calculator {
+  padding: 20px;
 }
 
 .logo {
@@ -57,6 +66,24 @@ input:focus {
   border: 1px solid #9b9999;
 }
 
+.btn {
+  padding: 12px 40px;
+  background-color: #6983c9;
+  color: #fff;
+  outline: none;
+  border: 2px solid #718bd3;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7e98e1;
+}
+
+.extension {
+  color: #fff;
+}
+
 .note {
   display: flex;
   align-items: center;
@@ -66,4 +93,59 @@ input:focus {
 }
 .footer-text {
   margin: 1.5rem 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 350px) {
+  .calculator {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin: 1.5rem 0;
+  }
+
+  .heading {
+    margin: 0 0 1.8rem 0;
+    font-size: 1.5rem;
+  }
+
+  .calculator {
+    width: 350px;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.15rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #d8d8d8;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .heading {
+    margin: 0 0 1.8rem 0;
+    font-size: 2rem;
+  }
+
+  .calculator {
+    width: 700px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
